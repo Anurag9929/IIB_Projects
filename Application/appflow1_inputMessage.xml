@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessagePool xmlns="http://wwww.ibm.com/iib/test/1.0.0">
+    <InputMessage timestamp="1660734753150" nodeId="FCMComposite_1_1" name="new message 1" id="1660734753150-6">
+        <plainText>%3C%3Fxml+version%3D%221.0%22%3F%3E%0D%0A%3Cbook+category%3D%22cooking%22%0D%0Axmlns%3D%22code2blog.com%22%3E%0D%0A%3Ctitle+lang%3D%22en%22%3EEvery+Italian%3C%2Ftitle%3E%0D%0A%3Cauthor%3EGiada+De+Laurentiis%3C%2Fauthor%3E%0D%0A%3Cyear%3E2005fgrgr%3C%2Fyear%3E%0D%0A%3Cprice%3E30.00%3C%2Fprice%3E%0D%0A%3C%2Fbook%3E</plainText>
+    </InputMessage>
+</MessagePool>
