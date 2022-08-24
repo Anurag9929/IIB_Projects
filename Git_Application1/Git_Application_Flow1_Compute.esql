@@ -5,13 +5,17 @@ CREATE COMPUTE MODULE Git_Application_Flow1_Compute
 	BEGIN
 		-- CALL CopyMessageHeaders();
 		 CALL CopyEntireMessage();
-		DECLARE sum,num1,num2 INTEGER;
+		DECLARE total,num1,num2 INTEGER;
 		
 		if(FIELDNAME(InputRoot.XMLNSC.*)='Add')THEN
 		 set num1=FIELDVALUE(InputRoot.XMLNSC.Add.num1);
 		 set num2=FIELDVALUE(InputRoot.XMLNSC.Add.num2);
-		 set OutputRoot.XMLNSC.Add.sum=num1+num2;
+		 set OutputRoot.XMLNSC.Add.total=num1+num2;
 		
+		ELSEIF(FIELDNAME(InputRoot.XMLNSC.*)='Sub')THEN
+		 set num1=FIELDVALUE(InputRoot.XMLNSC.Sub.num1);
+		 set num2=FIELDVALUE(InputRoot.XMLNSC.Sub.num2);
+		 set OutputRoot.XMLNSC.Add.total=num1+num2;
 		
 		
 		
